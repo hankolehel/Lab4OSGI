@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/szolgaltatas_fogyaszto/szolgaltatas_fogyaszto.iml" filepath="$PROJECT_DIR$/szolgaltatas_fogyaszto/szolgaltatas_fogyaszto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/szolgaltatas_implementacio/szolgaltatas_implementacio.iml" filepath="$PROJECT_DIR$/szolgaltatas_implementacio/szolgaltatas_implementacio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/szolgaltatas_implementacio_2/szolgaltatas_implementacio_2.iml" filepath="$PROJECT_DIR$/szolgaltatas_implementacio_2/szolgaltatas_implementacio_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/szolgaltatas_interface/szolgaltatas_interface.iml" filepath="$PROJECT_DIR$/szolgaltatas_interface/szolgaltatas_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/szolgaltatas_szulo.iml" filepath="$PROJECT_DIR$/szolgaltatas_szulo.iml" />
+    </modules>
+  </component>
+</project>

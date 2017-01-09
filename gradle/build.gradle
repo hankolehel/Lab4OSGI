@@ -1,0 +1,36 @@
+apply plugin: 'java'
+
+allprojects {
+def nexusUrl = 'http://pdae.cs.ubbcluj.ro/nexus'
+
+repositories {
+
+    mavenLocal()
+
+    maven { url "${nexusUrl}/content/groups/public" }
+}
+
+}
+
+
+subprojects {
+
+task copyToKaraf(type: Copy){
+            from(libsDir) { 
+                include '*.jar'
+                }
+            into "$System.env.KARAF_HOME/deploy"   
+        }
+    copyToKaraf.doLast{
+        println "This was the copyToKaraf task"
+        println project.name 
+        println libsDir
+        println " -------------ended----------"
+    }
+     build.dependsOn+= copyToKaraf 
+       
+}
+
+
+
+

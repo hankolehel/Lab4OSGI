@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'osgi'
+
+group = 'IDDE'
+version = '1.0-SNAPSHOT'
+description = """szolgaltatas_interface Bundle"""
+
+def nexusUrl = 'http://pdae.cs.ubbcluj.ro/nexus'
+
+repositories {
+
+    mavenLocal()
+
+    maven { url "${nexusUrl}/content/groups/public" }
+}
+
+
+
+dependencies {
+    compile(group: 'org.osgi', name: 'org.osgi.core', version:'4.3.1') {
+       
+    }
+}

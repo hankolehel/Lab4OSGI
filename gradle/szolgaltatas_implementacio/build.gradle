@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'osgi'
+
+group = 'IDDE'
+version = '1.0-SNAPSHOT'
+description = """szolgaltatas_implementacio Bundle"""
+
+
+jar {
+    manifest { 
+        instruction 'Bundle-Vendor', 'edu.ubb.cs'
+        instruction 'Bundle-Description', 'Szolgaltatast leiro osgi batyu'
+        instruction 'Bundle-Activator', 'idde.szolgaltatas_implementacio.Activator'
+    }
+
+}
+
+dependencies {
+    compile(group: 'org.osgi', name: 'org.osgi.core', version:'4.3.1') {
+       
+    }
+    compile project(':szolgaltatas_interface')
+
+}
